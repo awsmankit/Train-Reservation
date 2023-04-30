@@ -1,0 +1,17 @@
+.title{
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons{
+    text-align: center;
+    padding: 25px;
+}
+
+.table{
+    width: 100%;
+}
+
+.orange_color{
+    background-color: orange;
+}

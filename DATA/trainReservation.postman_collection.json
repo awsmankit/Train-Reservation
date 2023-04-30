@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "764fa717-d4af-4709-a3ef-e1271c2c7de4",
+		"name": "trainReservation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "userlogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"r@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.111.82.29:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"3",
+								"111",
+								"82",
+								"29"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/777",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"777"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserSignup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"rajat\",\r\n    \"lastName\":\"kavle\",\r\n    \"email\":\"r@gmail.com\",\r\n    \"password\":\"1234\"\r\n   \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.111.82.29:8080/user/signup",
+							"protocol": "http",
+							"host": [
+								"3",
+								"111",
+								"82",
+								"29"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"raju\",\r\n    \"lastName\":\"kavle\",\r\n    \"email\":\"raju@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"phone\": \"2333248823\",\r\n    \"address\": \"pune\",\r\n    \"createdOn\":\"2022-03-27\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/update/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"update",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeUserPass",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"password\":\"12345\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/changepass/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"changepass",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add Passenger",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\":\"raamu\",\r\n \"age\":23,\r\n \"gender\":\"male\",\r\n \"phoneNo\":\"9546477473\",\r\n \"region\":\"pune\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/AddPassenger",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"AddPassenger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/deleteUser/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"deleteUser",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://65.0.19.152:8080/user/all",
+							"protocol": "http",
+							"host": [
+								"65",
+								"0",
+								"19",
+								"152"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "AdminLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"@gmail.com\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdmin",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"pratik\",\r\n    \"lastName\": \"karande\",\r\n    \"email\": \"p@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"phone\": \"9453673747\",\r\n    \"address\": \"nashik\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/update/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TrainList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/trainlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"trainlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"pravin\",\r\n    \"lastName\":\"rathi\",\r\n    \"email\":\"p@gmail.com\",\r\n    \"password\":\"1234\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin/addAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"addAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all admins",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Train",
+			"item": [
+				{
+					"name": "searchTrain",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"source\":\"pune\",\r\n    \"destination\":\"mumbai\",\r\n    \"date\":\"2020-02-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/train/pune/mumbai/2022-05-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"pune",
+								"mumbai",
+								"2022-05-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete train",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/train/delete/105",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"delete",
+								"105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findTrain by date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/train/trainByDate/2020-02-10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"trainByDate",
+								"2020-02-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Train",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"arrivalTime\":\"13.00\",\r\n    \"departureTime\":\"6.30\",\r\n    \"fair\":210.00,\r\n    \"totalSeats\":10\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/train/editTrain/107",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"editTrain",
+								"107"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add train",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"no\":105,\r\n  \"trainName\":\"Garibrath\",\r\n  \"source\":\"delhi\",\r\n  \"destination\":\"mumbai\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/train/addtrain",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"addtrain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search train reqbody",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"source\":\"pune\",\r\n    \"destination\":\"mumbai\",\r\n    \"date\":\"2020-02-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.111.82.29:8080/train/search",
+							"protocol": "http",
+							"host": [
+								"3",
+								"111",
+								"82",
+								"29"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchtrainbyno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/train/trainByNo/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"trainByNo",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddTrain Calender",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"trainNo\":105,\r\n     \"trainDate\":\"2020-06-10\"\r\n   \r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/train/addtrainCalender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"train",
+								"addtrainCalender"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticket",
+			"item": [
+				{
+					"name": "ticketDetails",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ticket/details/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ticket",
+								"details",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BookTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n    \"name\":\"rajat\",\r\n    \"age\":24,\r\n    \"gender\":\"male\",\r\n    \"region\":\"pune\"\r\n    \r\n},\r\n  {\r\n    \"name\":\"pravin\",\r\n    \"age\":24,\r\n    \"gender\":\"male\",\r\n    \"region\":\"pune\"\r\n    \r\n}\r\n\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/bookTicket/102/2022-05-10/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"bookTicket",
+								"102",
+								"2022-05-10",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "paast user tickets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ticket/past/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ticket",
+								"past",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel ticket",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sno\":1,\r\n    \"status\":\"cancel\",\r\n    \"TrainNO\": 105 ,\r\n    \"trainDate\":\"2020-05-10\",\r\n    \"passengerId\":321\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ticket/cancelTicket/1/cancel/100/2020-02-10/1000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ticket",
+								"cancelTicket",
+								"1",
+								"cancel",
+								"100",
+								"2020-02-10",
+								"1000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelTicket Body",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sno\":1,\r\n    \"status\":\"cancel\",\r\n    \"TrainNO\": 101 ,\r\n    \"trainDate\":\"2020-04-10\",\r\n    \"passengerId\":329\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ticket/cancelTicket",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ticket",
+								"cancelTicket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
